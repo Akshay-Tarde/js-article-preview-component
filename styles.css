@@ -66,16 +66,48 @@ h3 {
 
 .share-icon-container {
     grid-row: span 2;
-    transform: scale(1.5);
     align-self: center;
     background-color: hsl(210, 46%, 95%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.share-icon {
+    transform: scale(1.5);
+}
+
+.active-share {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -115px;
+}
+
+.share-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-icon-container-active {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.share-icon-container-active svg path {
+    fill: #fff;
+}
+
+.social-links svg {
+    margin: 0 .5em;
 }
 
 /* Footer */
