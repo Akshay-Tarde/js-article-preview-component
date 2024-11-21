@@ -66,6 +66,9 @@ body {
     grid-template: repeat(2, auto) / 50px auto 50px;
     column-gap: 2em;
     margin: 3em 0;
+}
+
+.share-div-disappear {
     display: none;
 }
 
@@ -103,6 +106,7 @@ body {
     cursor: pointer;
 }
 
+
 .share-icon {
     transform: scale(1.5);
 }
@@ -116,6 +120,10 @@ body {
     left: 0;
     right: 0;
     bottom: -115px; */
+}
+
+.active-share-disappear {
+    display: none;
 }
 
 .share-text {
