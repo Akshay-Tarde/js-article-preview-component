@@ -14,3 +14,11 @@ share_btn.addEventListener("click", () => {
 active_share_btn.addEventListener("click", () => {
     active_share.classList.remove("active-share-translate")
 })
+
+share_btn.addEventListener('mouseover', () => {
+    active_share.classList.add("active-share-mouseover")
+})
+
+share_btn.addEventListener('mouseout', () => {
+    active_share.classList.remove("active-share-mouseover")
+})

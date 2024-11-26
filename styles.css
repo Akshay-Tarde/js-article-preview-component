@@ -193,6 +193,35 @@ a:hover {
     .main {
         width: 60%;
         padding: 1em 4em;
-
     }
+
+    .active-share {
+        justify-content: start;
+        left: unset;
+        right: -1.5em;
+        bottom: 6.5em;
+        display: none;
+        padding: 0 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .active-share-mouseover {
+        display: flex;
+    }
+
+    .share-icon-container:hover,
+    .share-icon-container:focus {
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-icon:hover path,
+    .share-icon:focus path {
+        fill: #fff;
+    }
+
+    .share-icon-container-active {
+        display: none;
+    }
+
 }
