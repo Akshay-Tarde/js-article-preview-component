@@ -49,9 +49,11 @@ body {
 }
 
 .card {
+    border-radius: 10px;
     max-width: 400px;
-    /* position: relative; */
+    position: relative;
     margin-top: 2em;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 .main,
@@ -65,12 +67,13 @@ body {
     display: grid;
     grid-template: repeat(2, auto) / 50px auto 50px;
     column-gap: 2em;
-    margin: 3em 0;
+    margin-top: 2.5em;
+    padding-bottom: 2em;
 }
 
-.share-div-disappear {
+/* .share-div-disappear {
     display: none;
-}
+} */
 
 .share-div,
 .active-share {
@@ -116,14 +119,21 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 1em 0;
-    /* position: absolute;
-    left: 0;
+    position: absolute;
+    left: 300%;
     right: 0;
-    bottom: -115px; */
+    bottom: 0;
+    transform: translateX(0);
+    transition: left 500ms;
 }
 
-.active-share-disappear {
+/* .active-share-disappear {
     display: none;
+} */
+
+.active-share-translate {
+    /* transform: translateX(300%); */
+    left: 0;
 }
 
 .share-text {
@@ -147,6 +157,7 @@ body {
 /* Footer */
 
 .attribution {
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -159,3 +170,7 @@ a:focus,
 a:hover {
     color: hsl(217, 19%, 35%)
 }
+
+
+
+/* Desktop design */
